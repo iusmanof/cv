@@ -2,7 +2,9 @@ $wrapper-color: #202020
 $header-color: #F9F9FA
 $title-color: #C87A17
 $text-color: #FFFFFF
+$yellow: #FEC80A
 $font: 'PT Sans Narrow', sans-serif
+$block-width: 40vw
 $test: 1px solid red
 
 body
@@ -11,12 +13,14 @@ body
     background-color: $wrapper-color
     color: white
 h1
-    font-family: $font  
-    font-weight: 700
+    font-family: $font
+    font-weight: 600
     text-transform: uppercase
-    font-size: 4rem
-    color: $header-color    
+    word-spacing: 10px
+    font-size: 4.5rem
 h2
+    padding-bottom: 30px
+    width: 180px
     font-family: $font
     font-weight: 400
     text-transform: uppercase
@@ -28,18 +32,65 @@ a p
     font-weight: 200
     font-size: 1.4rem
     color: $text-color
+p
+    line-height: 130%
 .wrapper
     width: 80vw
-    margin: 5vh auto
-    border: $test
+    margin: 0 auto
 .header
+    position: relative
+    padding-top: 10.5rem
     &__title
-        border: $test
+        text-align: center
+    &__toggle-lang
+        position: absolute
+        top: 15px
+        right: 15px
+.main
+    margin-top: 8.5rem
+    &__wrapper
+        padding: 0 90px
+    &__layer
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: start
+.work-experience
+    width: 27%
+    &__item
+        display: inline-block
+        position: relative
+        background: #f2f2f2
+        height: 30px
+        width: 120px
+        line-height: 30px
+        text-align: center
+    &__item:before
+        content: ""
+        position: absolute
+        border-left: 15px solid rgba(200, 120, 120, 0.66)
+        border-top: 15px solid transparent
+        border-bottom: 15px solid transparent
+        right: 0
+        top: 0
+.about-me
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    width: 40%
+    &__ava
+        padding-bottom: 20px
+    &__ava img
+        background-color: $yellow
+        border: 2px solid white
+        border-radius: 50%
+    &__text
+
 .contacts
-    border: $test
+    width: 27%
     &__title
-        border: $test
     &__item
         font-family: $font
-    &__item a 
+    &__item a
         font-size: 1.5rem
