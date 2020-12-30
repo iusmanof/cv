@@ -1,0 +1,45 @@
+$wrapper-color: #202020
+$header-color: #F9F9FA
+$title-color: #C87A17
+$text-color: #FFFFFF
+$font: 'PT Sans Narrow', sans-serif
+$test: 1px solid red
+
+body
+    font-family: 'PT Sans Narrow', sans-serif
+    width: 100vw
+    background-color: $wrapper-color
+    color: white
+h1
+    font-family: $font  
+    font-weight: 700
+    text-transform: uppercase
+    font-size: 4rem
+    color: $header-color    
+h2
+    font-family: $font
+    font-weight: 400
+    text-transform: uppercase
+    font-size: 3rem
+    letter-spacing: -3px
+    color: $title-color
+a p
+    font-family: $font
+    font-weight: 200
+    font-size: 1.4rem
+    color: $text-color
+.wrapper
+    width: 80vw
+    margin: 5vh auto
+    border: $test
+.header
+    &__title
+        border: $test
+.contacts
+    border: $test
+    &__title
+        border: $test
+    &__item
+        font-family: $font
+    &__item a 
+        font-size: 1.5rem
